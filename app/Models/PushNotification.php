@@ -8,13 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class PushNotification extends Model
 {
     use HasFactory;
-    protected $table = 'prices';
+    protected $table = 'push_notifications';
     protected $primaryKey = 'id';
 
     protected $fillable = [
-                            'day',
-                            'start',
-                            'stop',
-                            'value_multi'
+                            'title',
+                            'content',
+                            'destination'
                         ];
 }
